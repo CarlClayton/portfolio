@@ -1,0 +1,32 @@
+@import './01-settings/settings.scss';
+@import './02-tools/tools.scss';
+@import './03-generic/generic.scss';
+@import './04-elements/elements.scss';
+@import './05-objects/objects.scss';
+@import './06-components/components.scss';
+@import './07-trumps/trumps.scss';
+
+
+.App {
+    height: 100vh;
+
+    .sections {
+        width: 100%;
+        height: calc(100vh - 70px);
+        position: relative;
+        top: 70px;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+            }
+    
+        > * {
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start;
+            }
+        }
+    }
