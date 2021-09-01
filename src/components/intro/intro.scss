@@ -25,6 +25,7 @@
 
             img{
                 height: 90%;
+                border-radius: 0 0 40% 40%;
 
                 @include mobile {
                     height: 50%;
